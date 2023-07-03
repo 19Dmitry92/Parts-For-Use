@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+.slider-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    width: 900px;
+    background: url("images/slider1.jpg");
+    transition: .5s;
+}
+
+.prev-div,
+.next-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    margin: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 200px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+.next-div:hover,
+.prev-div:hover{
+    box-shadow: 0px 0px 20px rgb(255, 255, 255, 0.5);
+}
+
+
+.next-div:active,
+.prev-div:active {
+    transform: scale(0.9);
+    transition: .5;
+}
